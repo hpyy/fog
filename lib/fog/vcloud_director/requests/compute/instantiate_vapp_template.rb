@@ -7,7 +7,7 @@ module Fog
 
         def instantiate_vapp_template(vapp_name, template_id, options = {})
           params = populate_uris(options.merge(:vapp_name => vapp_name, :template_id => template_id))
-          validate_uris(params)
+          #validate_uris(params)
 
           data = generate_instantiate_vapp_template_request(params)
 
